@@ -1,0 +1,18 @@
+<%= form_for([:admin, @link_category]) do |f| %>
+  <%= render "shared/error_messages", :target => f.object %>
+  <fieldset>
+      <%= f.field_container :name do %>
+          <%= f.label :name, t("name") %> <span class="required">*</span><br />
+          <%= f.text_field :name, :class => 'fullwidth title'  %>  
+          <%= f.error_message_on :name %>
+      <% end %>
+      
+      <%= f.field_container :locale do %>
+          <%= f.label :locale, t("region") %><br />
+          <%= f.select :locale, I18n.available_locales.map { |l| [t(l), l] } %>  
+          <%= f.error_message_on :locale %>
+      <% end %>
+      
+      <%= render :partial => 'admin/shared/new_resource_links' %>
+  </fieldset>
+<% end %>

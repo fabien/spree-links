@@ -1,0 +1,14 @@
+--- 
+en: 
+  spree_links: Links
+  link_categories_admin: Links
+  link_categories: Categories
+  new_link_category: New Category
+  links: Links
+  create_category: Create Category
+  category_name: Category Name
+  add_link: Add Link
+  link_url: Link
+  link_title: Title
+  link_description: Description
+  no_links: No links available

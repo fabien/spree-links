@@ -1,0 +1,18 @@
+#links {
+}
+
+#links .link {
+  margin-bottom: 1em;
+  padding: 1em;
+  border: solid 1px #ccc;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; 
+}
+
+#links .link textarea, #links .link input {
+  width: 600px;
+}
+#links .link textarea {
+  height: 40px;
+  padding: 0;
+}

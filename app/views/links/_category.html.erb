@@ -1,0 +1,14 @@
+<div id="<%= dom_id category -%>" class="category">
+<% if category.links.any? %>
+  <% category.links.each do |link| %>
+  <div id="<%= dom_id link %>" class="link">
+    <h3><%= link_to(link.title, link.url) %></h3>
+    <div class="markup eq40">
+      <%= simple_format link.description %>
+    </div>
+  </div>
+  <% end %>
+<% else %>
+  <h3 class="none"><%= t(:no_links) %></h3>
+<% end %>
+</div>
