@@ -1,5 +1,5 @@
 <%= form_for([:admin, @link_category]) do |f| %>
-  <%= render "shared/error_messages", :target => f.object %>
+  <%= render "spree/shared/error_messages", :target => f.object %>
   <fieldset>
       <%= f.field_container :name do %>
           <%= f.label :name, t("name") %> <span class="required">*</span><br />
@@ -13,6 +13,6 @@
           <%= f.error_message_on :locale %>
       <% end %>
       
-      <%= render :partial => 'admin/shared/new_resource_links' %>
+      <%= render :partial => 'spree/admin/shared/new_resource_links' %>
   </fieldset>
 <% end %>

@@ -1,9 +1,9 @@
 <% content_for :head do %>
-  <%= javascript_include_tag 'jquery.scrollTo-min' %>
-  <%= stylesheet_link_tag 'spree_links' %>
+  <%= javascript_include_tag 'admin/jquery.scrollTo-min' %>
+  <%= stylesheet_link_tag 'admin/spree_links' %>
 <% end %>
 <%= form_for([:admin, @link_category]) do |f| %>
-  <%= render "shared/error_messages", :target => f.object %>
+  <%= render "spree/shared/error_messages", :target => f.object %>
   <%= javascript_tag do %>
      var new_link_html = '<%= generate_template(f, :links) %>';
 
@@ -46,7 +46,7 @@
         <% end %>
       </div>
 
-      <%= render :partial => 'admin/shared/edit_resource_links' %>
+      <%= render :partial => 'spree/admin/shared/edit_resource_links' %>
     </div>
   </div>
                                       
